@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 id='title'>TOCTECH Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the plateform</p>
+    
+      <form id='survey-form'>
+        <fieldset class = 'first'>
+       <label id='name-label'>Name:<input type='text' name='full-name' placeholder='full-name' /></label>
+        <label id='email-label'>Email:<input type='email' name='email' placeholder='email' /></label>
+        <label>Password:<input type='password' name='password' pattern="[a-z0-5]{8,}" placeholder='123....' /></label>
+        <label id='number-label'>Age (optional):<input type='number' name='age' min='18' max='100' placeholder='123.....' /></label>
+    </fieldset>
+    <fieldset>
+      <label>What option best describes your current role?
+        <select>
+          <option id='dropdown'>(Select Option)</option>
+          <option>Web Designer</option>
+          <option>Data Analyst</option>
+          <option>Content Writter</option>
+          <option>Others</option>
+        </select>
+      </label>
+      <div>
+      <label>Would you recommend Toctech to a friend?</label>
+       <labe><input type='radio' name='definately' class='input-radio'/>&nbsp;&nbsp;Definately</labe>
+      <label><input type='radio' name='maybe'class='input-radio'/>&nbsp;&nbsp;Maybe</label>
+      <label><input type='radio' name='not sure' class='input-radio'/>&nbsp;&nbsp;Not Sure</label>
+      </div>
+      <label>What is your favourite feature of Toctech?
+        <select>
+          <option>(Select Option)</option>
+          <option>Customer care</option>
+          <option>Designs</option>
+          <option>Security</option>
+          <option>Others</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>What would you like to see improve?</lable>
+      <div>
+        <label><input type='checkbox' value='front-end projects'class='input-checkbox'  />&nbsp;&nbsp;Front-end Projects</label>
+        <label><input type='checkbox' value='back-end projects' 'input-checkbox' />&nbsp;&nbsp;Back-end Projects</label>
+        <label><input type='checkbox' value='data visualization''input-checkbox'  />&nbsp;&nbsp;Data Visualization</label>
+        <label><input type='checkbox' value='vidoes''input-checkbox'  />&nbsp;&nbsp;Videos</label>
+      </div>
+        <label>Any Comments or Suggestions
+          <textarea name='comments' rows='4' col='40' placeholder='comments or suggestions...'></textarea></label>
+    </fieldset>
+    <input type='submit' value='Submit' id='submit' />
+    </form>
+</body>
+</html>
